@@ -126,6 +126,7 @@
 .section2_top .text h1{
     width: 100%;
     text-align: center;
+    font-size: 250%;
 }
 .section2_bottom{
     width: 100%;
@@ -165,7 +166,7 @@
 }
 .section3 .check_icon{
     color:  #f1c50e;
-    font-size: 2rem
+    font-size: 3rem
 }
 .section3 .section3_all{
     width: 100%;
@@ -178,9 +179,6 @@
     height: 100%;
     align-items: center;
 }
-.section3 .section3_all .left1{
-    
-}
 .section3 .text .heading{
     height: 100px;
     width: 100%;
@@ -188,8 +186,14 @@
     padding: 20px 0;
     
 }
+.section3 .text .heading{
+        height: 150px;
+    }
+.section3 .text .heading h1{
+        font-size: 250%;
+    }
 .section3 .text .heading .background-color{
-    height: 30px;
+    height: 50px;
     width: 90%;
     position: absolute;
     margin-left: 50px;
@@ -234,7 +238,7 @@ position: relative;
 /* section4 :start */
 .section4{
     width: 100%;
-    height: 600px;
+    height: 80vh;
     background-color: #141824;
     color: white;
     text-align: center;
@@ -252,6 +256,12 @@ position: relative;
     margin: 0 auto;
     width: 60%;
     height: 100%;
+}
+.section4 h1{
+    font-size: 250%;
+}
+.section4 p{
+    line-height: 30px;
 }
 
 /* section4 end  */
@@ -380,6 +390,7 @@ position: relative;
     margin: 10px;
     background-color: #141824;
     border: 2px solid white;
+    color: white;
 }
 .footer .button{
     width: 100%;
@@ -390,4 +401,159 @@ position: relative;
     background-color: white;
     margin: 0 auto;
     border: none;
+}
+
+@media only screen and (max-width:480px){
+    .header_text h1{
+        font-size: 50px;
+        
+    }
+    .header_section .header_text .header_top_text{
+        margin: 0;
+        padding: 150px 0px 50px 10px;
+        height: 60%;
+        text-align: justify;
+    }
+    .header_section .header_text .header_bottom_text  {
+    display: block;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    padding:  10px 10px 10px 10px;
+    margin-top: 50px;
+    }
+    .header_section .header_text .header_bottom_text .left{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .header_section .header_text .header_bottom_text .right{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .section2_bottom .text{
+        width: 100%;
+        padding: 50px 5px;
+    }
+    .section2{
+    padding: 50px 10px 0 10px;
+    height: auto;
+    }
+    .section3{
+    padding: 50px 10px 0 10px;
+    height: auto;
+    }
+    .section3 .check_icon {
+    color: #f1c50e;
+    font-size: 3rem;
+
+    }
+    .section3 .section3_all {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    }
+    .section3 .section3_all .left , .right {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    }
+    .section3 .section3_all .right {
+    width: 100%;
+    height: 100%;
+    }
+    .section3  .img {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    position: static;
+    }
+    .section3 .text .heading .background-color{
+        height: 52px;
+    }
+    .section3 .text .heading{
+        height: 200px;
+    }
+    .section3 .text .heading h1{
+        font-size: 250%;
+    }
+    .section3  img {
+    margin: auto;
+    display: block;
+    position: static;
+    bottom: -10px;
+    width: 100%;
+    height: auto;
+    }
+    .section4 {
+    width: 100%;
+    height: auto;
+    background-color: #141824;
+    color: white;
+    text-align: center;
+    padding: 50px 14px;
+    }
+    .section4 .section4_all_text {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    }
+    body > section.section4 > div > div > div.text{
+        margin-bottom: 50px;
+    }
+    .section5 .img {
+    height: 100%;
+    width: 100%;
+    }
+    .section5 {
+    width: 100%;
+    height: auto;
+    }
+    .section6 .left {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    }
+    .section6{
+        padding: 0 5px;
+        height: auto;
+    }
+    .section6 .right{
+        width: 100%;
+        height: auto;
+    }
+    .section6 .bottom {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+    
+    .section6 .bottom_left {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    }
+    .section6 .right{
+        padding: 10px 10px;
+    }
+    .footer .right{
+        height: auto;
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .footer .left{
+        height: auto;
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .footer{
+        height: auto;
+        padding: 50px 5px;
+    }
+    .footer input, textarea{
+        margin: 10px 0;
+    }
 }
